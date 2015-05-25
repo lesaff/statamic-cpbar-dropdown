@@ -1,0 +1,7 @@
+#control-bar {overflow: initial;}
+#control-bar a:hover {background: none;}
+#control-bar .btn {margin: 6px 0 0;}
+#control-bar .dropdown-menu li {float: none;}
+#control-bar .dropdown-menu li:hover {background: none;}
+#control-bar .dropdown-menu li a:hover {color: #2e393c;}
+#control-bar .dropdown-menu li a.active {color: #2e393c; background: none;}
