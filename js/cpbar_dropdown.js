@@ -21,30 +21,4 @@ jQuery(document).ready(function()
     listArray.reverse();
     $(listArray).appendTo('#cp-select');
     $('#cp-select').find('li a').attr({'role': 'menuitem', 'tabindex': '-1'});
-
-
-
-    /*
-    cpBarNav.each(function() {
-        var list = $(this);
-        var select = $(document.createElement('select')).insertBefore($(this).hide());
-
-        $('>li a', this).each(function() {
-            var target = $(this).attr('target'),
-            option = $(document.createElement('option'))
-                .appendTo(select)
-                .val(this.href)
-                .html($(this).html())
-                .click(function(){
-                    if(target==='_blank') {
-                        window.open($(this).val());
-                    }
-                    else {
-                        window.location.href = $(this).val();
-                    }
-                });
-        });
-        list.remove();
-    });
-*/
 });
