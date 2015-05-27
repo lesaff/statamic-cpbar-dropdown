@@ -5,3 +5,11 @@
 #control-bar .dropdown-menu li:hover {background: none;}
 #control-bar .dropdown-menu li a:hover {color: #2e393c;}
 #control-bar .dropdown-menu li a.active {color: #2e393c; background: none;}
+
+/* Override Ascent's default mobile view */
+@media screen and (max-width: 880px) {
+    #control-bar .dropdown-menu .title,
+    #control-bar .dropdown-menu .avatar {
+        display:inline-block
+    }
+}
