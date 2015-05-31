@@ -11,10 +11,10 @@ jQuery(document).ready(function()
     var cpBar = $('#control-bar');
     var cpBarNav = cpBar.find('ul.pull-left');
     var cpBarLogo = $('#statamic-logo');
-    var cpBarDropDownFrame = '<div class="pull-left"><div class="dropdown"><button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Addons <span class="caret"></span></button><ul id="cp-select" class="dropdown-menu" role="menu" aria-labelledby="menu1"></ul></div></div>';
-    var cpBarNavItems = cpBarNav.find('li').not('#statamic-logo, #item-content');
-    var cpBarExcludes = $('#statamic-logo, #item-content');
-    cpBarNav.find('li').not('#statamic-logo, #item-content').remove();
+    var cpBarDropDownFrame = '<div class="pull-left"><div class="dropdown"><a href="#" class="dropdown-toggle" id="menu1" data-toggle="dropdown"><span class="ss-icon">puzzle</span><span class="title">Addons</span></a><ul id="cp-select" class="dropdown-menu" role="menu" aria-labelledby="menu1"></ul></div></div>';
+    var cpBarNavItems = cpBarNav.find('li').not('#statamic-logo, #item-content, #item-system, #item-members');
+    var cpBarExcludes = $('#statamic-logo, #item-content, #item-system, #item-members');
+    cpBarNav.find('li').not('#statamic-logo, #item-content, #item-system, #item-members').remove();
     $(cpBarDropDownFrame).insertAfter(cpBarNav);
     var listArray = jQuery.makeArray( cpBarNavItems );
 
