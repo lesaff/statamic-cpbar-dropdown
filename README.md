@@ -12,4 +12,4 @@ This addon will create a dropdown menu from your list of addons. Why?, so you ca
 1.0.0 - Initial release
 
 ## Installation
-Copy the `cpbar_dropdown` folder to the `_add-ons` folder in your Statamic website.
+Copy the folder to the `_add-ons` folder and rename it to `cpbar_dropdown`.
