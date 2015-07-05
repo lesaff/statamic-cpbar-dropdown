@@ -8,6 +8,7 @@ if(e.trigger(f),b.trigger(g),!g.isDefaultPrevented()&&!f.isDefaultPrevented()){v
 
 jQuery(document).ready(function()
 {
+	// Primary controls
     var cpBar = $('#control-bar');
     var cpBarNav = cpBar.find('ul.pull-left');
     var cpBarLogo = $('#statamic-logo');
@@ -16,9 +17,19 @@ jQuery(document).ready(function()
     var cpBarExcludes = $('#statamic-logo, #item-content, #item-system, #item-members');
     cpBarNav.find('li').not('#statamic-logo, #item-content, #item-system, #item-members').remove();
     $(cpBarDropDownFrame).insertAfter(cpBarNav);
-    var listArray = jQuery.makeArray( cpBarNavItems );
+    var cpBarArray = jQuery.makeArray( cpBarNavItems );
 
-    listArray.reverse();
-    $(listArray).appendTo('#cp-select');
+    $(cpBarArray).appendTo('#cp-select');
     $('#cp-select').find('li a').attr({'role': 'menuitem', 'tabindex': '-1'});
+
+	// Secondary controls
+    var cpBarSecondary = cpBar.find('ul.secondary-controls');
+    var cpBarSecondaryDropDownFrame = '<div class="pull-left"><div class="dropdown"><a href="#" class="dropdown-toggle" id="menu1" data-toggle="dropdown"><span class="ss-icon">globe</span><span class="title">Tools</span></a><ul id="cp-tools" class="dropdown-menu" role="menu" aria-labelledby="menu2"></ul></div></div>';
+    var cpBarSecondaryItems = cpBarSecondary.find('li');
+    cpBarSecondary.find('li').remove();
+    $(cpBarSecondaryDropDownFrame).insertAfter(cpBarSecondary);
+    var cpBarSecondaryArray = jQuery.makeArray( cpBarSecondaryItems );
+
+    $(cpBarSecondaryArray).appendTo('#cp-tools');
+    $('#cp-tools').find('li a').attr({'role': 'menuitem', 'tabindex': '-1'});
 });

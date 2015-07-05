@@ -9,6 +9,8 @@
  * @license    http://opensource.org/licenses/MIT
  *
  * Versions
+ * 1.0.2       Grouped Profile, View Site and Logout to another dropdown, markerd as Tools
+ * 1.0.1       Updated styling per Mike Martin's suggestion. Separated adons from core functions
  * 1.0.0       Initial release
  */
 
