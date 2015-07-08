@@ -8,6 +8,10 @@ if(e.trigger(f),b.trigger(g),!g.isDefaultPrevented()&&!f.isDefaultPrevented()){v
 
 jQuery(document).ready(function()
 {
+	// Fix Subnav clearing
+    var cpSubNavBar = $('#subnav');
+    cpSubNavBar.css({'clear': 'both'});
+
 	// Primary controls
     var cpBar = $('#control-bar');
     var cpBarNav = cpBar.find('ul.pull-left');
