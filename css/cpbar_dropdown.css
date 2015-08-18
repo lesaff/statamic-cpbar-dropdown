@@ -1,4 +1,4 @@
-#control-bar {overflow: initial;}
+#control-bar {overflow: visible; z-index: 1000;}
 #control-bar a:hover {background: none;}
 #control-bar .btn {margin: 6px 0 0;}
 #control-bar .dropdown-menu li {float: none;}
